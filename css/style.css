@@ -159,7 +159,7 @@ body {
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-between;    
-    margin-bottom: 30px;
+    
 }
 
 .products__item {
@@ -170,6 +170,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;  
     background-color: var(--light-gray-color);
+    margin-bottom: 30px;
 }
 
 .products__item-img {
@@ -246,6 +247,7 @@ body {
 .promo__list {
     display: flex;       
     justify-content: center;  
+    flex-wrap: wrap;
     width: 100%; 
 }
 
