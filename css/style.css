@@ -179,7 +179,7 @@ body {
     margin-bottom: 30px;
 }
 
-.products__item-imgwrapper {    
+.products__item-img-wrapper {    
     background-color: var(--pink-color);
     width: 360px;
     display: flex;
