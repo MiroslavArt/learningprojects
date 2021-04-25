@@ -121,20 +121,20 @@ body {
 }
 
 .stocks__item--woman {
-    background-image: url(../img/womangarment.jpg);
+    background-image: url(../img/womangarmentb.jpg);
 }
 
 .stocks__item--man {
-    background-image: url(../img/mangarment.jpg);    
+    background-image: url(../img/mangarmentb.jpg);    
 }
 
 .stocks__item--kids {
-    background-image: url(../img/childgarment.jpg);   
+    background-image: url(../img/childgarmentb.jpg);   
 }
 
 .stocks__item--accessories {
     width: 100%;
-    background-image: url(../img/footwear.jpg);    
+    background-image: url(../img/footwearb.jpg);    
     min-height: 180px;
     margin-top: 30px;
 }
