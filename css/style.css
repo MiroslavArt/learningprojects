@@ -331,6 +331,7 @@ a {
     align-items: center;
     flex-direction: column;    
     min-height: 191px;
+    
 }
 
 .products__allbutton {
@@ -339,14 +340,12 @@ a {
     align-items: center;
     flex-direction: column; 
     min-height: 47px;
-    width: 211px;    
-    border-width: 1px;
-    border-style: solid;    
-    color:var(--red-color)
+    width: 211px;               
+    background-color: var(--red-color);      
 }
 
 .allbutton-item__link {  
-    color:var(--red-color)
+    color:var(--white-color);
 }
 
 .promo {
@@ -383,4 +382,56 @@ a {
     font-size: 14px;
     color: var(--white-color);
     text-align: center;
+}
+
+.callback__background {
+    background-image: url(../img/landscape.jpg); 
+    width: 100%;
+    min-height: 448px;
+}
+
+.callback__list {
+    display: flex;       
+    justify-content: center;  
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.callback__list-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 250px;  
+}
+
+.callback__list-item-form-header {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.callback__list-item-form-header--bottom {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.callback__list-item-form-email {
+    height: 49px;
+    width: 300px;
+    border: none;
+    background-color: var(--light-gray-color);
+    border-radius: 20px 0 0 20px;
+}
+
+.callback__list-item-form-button {
+    height: 55px;
+    width: 85px;
+    margin-left: -5px;
+    color: var(--white-color);
+    border: none;
+    background-color: var(--red-color);
+    border-radius: 0 20px 20px 0;
 }
