@@ -15,6 +15,11 @@ body {
     line-height: 17px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -45,6 +50,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header__logo {
@@ -54,6 +60,7 @@ body {
 .header__menu-button {
     border: none;
     background-color: transparent;
+    min-height: 75px;
 }
 
 .header__link {
@@ -61,7 +68,71 @@ body {
 }
 
 .header__navigation {
-    display: none;
+    position: absolute;
+    width: 332px;
+    height: 765px;
+    top: 62px;
+    right: -142px;
+    background: var(--white-color);
+    display: none;  
+    margin-top: 13px;    
+}
+
+.header__menu-button:hover +.header__navigation,
+.header__menu-button:focus +.header__navigation {
+    display: block;
+}
+
+.header__navigation:hover {
+    display: block;
+}
+
+.header__navigation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;     
+    margin-left: 34px; 
+    font-size: 14px;
+}
+
+.header__navigation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;      
+    margin-top: 24px;   
+}
+
+.navigation-item__sublist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;     
+    margin-left: 54px;
+}
+
+.navigation-item__link {
+    margin-top: 24px; 
+}
+
+.navigation-item__sublist-link:first-child {
+    margin-top: 13px; 
+}
+
+.header__navigation-title {
+    text-transform: uppercase;
+    color: var(--black-color)   
+}
+
+.navigation-item__link {
+    text-transform: uppercase;
+    color: var(--red-color);    
+}
+
+.navigation-item__sublist-link {
+    margin-top: 11px;  
+    color: var(--black-color);   
 }
 
 .brand {
@@ -71,7 +142,7 @@ body {
 .brand__heading-wrapper {
     background-color: var(--pink-color);
     flex-grow: 1;
-    padding: 0 0 0 92px;
+    padding: 0 0 0 42px;
     display: flex;
     align-items: center;
 }
