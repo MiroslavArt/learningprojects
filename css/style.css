@@ -435,3 +435,36 @@ a {
     background-color: var(--red-color);
     border-radius: 0 20px 20px 0;
 }
+
+.footer {
+    background-color: var(--black-color);
+}
+
+.footer__wrapper {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.footer__wrapper-rights {
+    color: var(--white-color);
+}
+
+.footer__wrapper-socnet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+
+.footer-socnets__wrapper {
+    margin-right: 10px;
+    background-color: var(--white-color);
+    
+}
+
+.footer-socnets__wrapper--pink {
+    background-color: var(--red-color);
+    margin-right: 10px;
+}
