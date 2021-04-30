@@ -1,0 +1,42 @@
+.brand {
+    display: flex;    
+}
+
+.brand__heading-wrapper {
+    background-color: $pinkcolor;
+    flex-grow: 1;
+    padding: 0 0 0 42px;
+    display: flex;
+    align-items: center;    
+}
+
+.brand__heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.brand__heading::before {
+    content: '';
+    width: 10px;
+    height: 100%;
+    background-color: $redcolor;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.brand__heading-text {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__heading-text--red {
+    color: $redcolor;
+}
+
+
+

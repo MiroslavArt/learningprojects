@@ -1,0 +1,25 @@
+.navigation-item__sublist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;     
+    margin-left: 54px;
+}
+
+.navigation-item__link {
+    margin-top: 24px; 
+}
+
+.navigation-item__sublist-link:first-child {
+    margin-top: 13px; 
+}
+
+.navigation-item__link {
+    text-transform: uppercase;
+    color: $redcolor;    
+}
+
+.navigation-item__sublist-link {
+    margin-top: 11px;  
+    color: $blackcolor;   
+}

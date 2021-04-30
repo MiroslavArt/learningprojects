@@ -1,0 +1,46 @@
+.callback__background {
+    background-image: url(../img/landscape.jpg); 
+    width: 100%;
+    min-height: 448px;
+}
+
+.callback__list {
+    @include flex-center(row);
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.callback__list-item {
+    width: 50%;
+    @include flex-center;
+    min-height: 250px;  
+}
+
+.callback__list-item-form-header {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.callback__list-item-form-header--bottom {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.callback__list-item-form-email {
+    height: 49px;
+    width: 300px;
+    border: none;
+    background-color: $lightgraycolor;
+    border-radius: 20px 0 0 20px;
+}
+
+.callback__list-item-form-button {
+    height: 55px;
+    width: 85px;
+    margin-left: -5px;
+    color: $whitecolor;
+    border: none;
+    background-color: $redcolor;
+    border-radius: 0 20px 20px 0;
+}

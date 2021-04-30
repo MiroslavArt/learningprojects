@@ -1,0 +1,26 @@
+@mixin flex-center-space-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center($direction:column) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flex-center-start($direction:column) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font($size: 14px, $height: 17px, $weight: 300, $style:normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}
