@@ -71,9 +71,11 @@
             <ul class="reg__list">
                 <li class="reg__list-item reg__list-item--short">
                     <form class="reg__form" action='' method="GET">
-                        <label class="reg__form-label">Your name</label>
-                        <input class="reg__form-text-input" type="text" placeholder="First name" required>
-                        <input class="reg__form-text-input" type="text" placeholder="Last name" required>
+                        <fieldset>
+                            <legend class="reg__form-label">Your name</label><br>
+                            <input class="reg__form-text-input" type="text" placeholder="First name" required>
+                            <input class="reg__form-text-input" type="text" placeholder="Last name" required>
+                        </fieldset>                        
                         <div class="reg__form-radio-wrapper">
                             <p><input class="reg__form-radio-input" name="gender" type="radio">Male</p>
                             <p><input class="reg__form-radio-input" name="gender" type="radio">Female</p>
