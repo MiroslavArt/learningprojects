@@ -26,8 +26,7 @@
 
 .products__item {
     width: 32%;
-    height: auto;
-
+    
     @include tablet {
         width: 48%;
     }
@@ -49,15 +48,16 @@
     display: block;
 }
 
-.products__item-img-wrapper--black {
-    background-color: $blackcolor;
-    height: 100%;
+.products__item-img-wrapper {
+    width: 100%;    
+    background-color: $blackcolor;   
+    
     overflow: hidden;
 }
 
 .products__item-img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .products__item-img:hover {

@@ -338,7 +338,6 @@ body {
 
 .products__item {
   width: 32%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,15 +372,15 @@ body {
   display: block;
 }
 
-.products__item-img-wrapper--black {
+.products__item-img-wrapper {
+  width: 100%;
   background-color: #222222;
-  height: 100%;
   overflow: hidden;
 }
 
 .products__item-img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .products__item-img:hover {
