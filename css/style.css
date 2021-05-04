@@ -619,7 +619,7 @@ body {
 }
 
 .promo__item {
-  width: 360px;
+  width: 30%;
   min-height: 341px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,6 +634,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1399px) {
+  .promo__item {
+    width: 100%;
+    min-height: 200px;
+  }
 }
 
 .promo__item-heading {
@@ -652,7 +659,7 @@ body {
 .callback__background {
   background-image: url(../img/landscape.jpg);
   width: 100%;
-  min-height: 448px;
+  opacity: 1;
 }
 
 .callback__list {
@@ -672,10 +679,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  min-height: 448px;
 }
 
 .callback__list-item {
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,7 +698,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 250px;
+}
+
+@media (max-width: 1399px) {
+  .callback__list-item {
+    width: 100%;
+    min-height: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .callback__list-item {
+    width: 100%;
+    min-height: 50%;
+  }
 }
 
 .callback__list-item-form-header {

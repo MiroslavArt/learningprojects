@@ -1,19 +1,31 @@
 .callback__background {
     background-image: url(../img/landscape.jpg); 
     width: 100%;
-    min-height: 448px;
+    opacity: 1;    
 }
 
 .callback__list {
     @include flex-center(row);
     flex-wrap: wrap;
     width: 100%; 
+    min-height: 448px;
+    
 }
 
 .callback__list-item {
     width: 50%;
+    height: 100%; 
     @include flex-center;
-    min-height: 250px;  
+          
+    @include tablet {
+        width: 100%;
+        min-height: 50%;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 50%;
+    }
 }
 
 .callback__list-item-form-header {
