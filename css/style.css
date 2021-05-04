@@ -639,7 +639,14 @@ body {
 @media (max-width: 1399px) {
   .promo__item {
     width: 100%;
-    min-height: 200px;
+    min-height: 342px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .promo__item {
+    width: 100%;
+    min-height: 342px;
   }
 }
 
@@ -723,6 +730,7 @@ body {
 .callback__list-item-form-header--bottom {
   font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 .callback__list-item-form-email {
@@ -741,6 +749,14 @@ body {
   border: none;
   background-color: #F16D7F;
   border-radius: 0 20px 20px 0;
+}
+
+.callback__list-item-citation {
+  width: 359px;
+  height: 99px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .regheader {
@@ -938,10 +954,24 @@ body {
 .footer-socnets__wrapper {
   margin-right: 12px;
   background-color: #FFFFFF;
+  width: 23px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer-socnets__wrapper--pink {
   background-color: #F16D7F;
-  margin-right: 12px;
 }
 /*# sourceMappingURL=style.css.map */

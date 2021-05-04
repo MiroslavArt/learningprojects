@@ -37,6 +37,7 @@
 .callback__list-item-form-header--bottom {
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: 32px;
 }
 
 .callback__list-item-form-email {
@@ -55,4 +56,12 @@
     border: none;
     background-color: $redcolor;
     border-radius: 0 20px 20px 0;
+}
+
+.callback__list-item-citation {
+    width: 359px;
+    height: 99px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
 }
