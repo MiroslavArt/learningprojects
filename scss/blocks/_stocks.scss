@@ -7,9 +7,20 @@
 }
 
 .stocks__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
+    background-size: cover;
     @include flex-center;   
+    @include tablet {
+        min-height: 167px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 248px;
+        margin-bottom: 32px;
+    }
+
 }
 
 .stocks__item-text {
@@ -39,4 +50,13 @@
     background-image: url(../img/footwearb.jpg);    
     min-height: 180px;
     margin-top: 30px;
+
+    @include tablet {
+        min-height: 116px;
+    }
+
+    @include mobile {
+        margin-top: 0px;
+        min-height: 111px;
+    }
 }

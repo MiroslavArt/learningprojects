@@ -13,9 +13,19 @@
 }
 
 .promo__item {
-    width: 360px;
+    width: 30%;
     min-height: 341px;
-    @include flex-center; 
+    @include flex-center;
+    
+    @include tablet {
+        width: 100%;
+        min-height: 342px;
+    }
+
+    @include tablet {
+        width: 100%;
+        min-height: 342px;
+    }
 }
 
 .promo__item-heading {

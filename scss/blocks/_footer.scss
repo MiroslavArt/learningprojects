@@ -20,14 +20,18 @@
     }
     
     &-socnets__wrapper {
-        margin-right: 10px;
+        margin-right: 12px;
         background-color: $whitecolor;
+        width: 23px;
+        height: 24px;
+        @include flex-center;
+
+        &--pink {
+            background-color: $redcolor;        
+        }
         
     }
     
-    &-socnets__wrapper--pink {
-        background-color: $redcolor;
-        margin-right: 10px;
-    }
+
 }
 

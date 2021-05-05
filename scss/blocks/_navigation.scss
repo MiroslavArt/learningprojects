@@ -1,3 +1,15 @@
+.header__navigation {
+    position: absolute;
+    width: 332px;
+    height: 765px;
+    top: 62px;
+    right: -142px;
+    background: $whitecolor;
+    display: none;  
+    margin-top: 13px;   
+    z-index: 99999;  
+}
+
 .navigation-item__sublist {
     display: flex;
     flex-direction: column;
