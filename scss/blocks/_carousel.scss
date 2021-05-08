@@ -1,5 +1,7 @@
 .carousel-center  {    
-    @include flex-center(row); 
+    @include flex-center-start(); 
+    min-height: 789px;
+    z-index: 22;
 }
 
 .carousel-wrapper {

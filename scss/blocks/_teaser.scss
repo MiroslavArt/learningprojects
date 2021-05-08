@@ -1,0 +1,120 @@
+.teaser {
+    @include flex-center; 
+    &__block {
+        min-height: 601px;
+        margin-top: -65px;
+        z-index: 999999;
+        background-color: $whitecolor;
+        border-width:1px;
+        border-color: $lightgraycolor; 
+        border-style: solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    
+        @include tablet {
+            margin-top: 0px;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+            width: 100%;
+        }
+
+        &-header {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 14px;
+            color: $redcolor;
+            position: relative;            
+        }
+
+        &-header::before {
+            content: '';
+            width: 63px;
+            height: 3px;
+            background-color: $redcolor;
+            position: absolute;
+            top: 30px;
+            left: 43px;   
+        }
+
+        &-highlight {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &-text {
+            width: 50%;
+            text-align: center;
+            line-height: 17px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        &-price {
+            color: $redcolor;
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+        }
+
+        &-price::before {
+            content: '';
+            width: 641px;
+            height: 1px;
+            background-color: $graycolor;
+            position: absolute;
+            top: 65px;
+            left: -280px;   
+            @include mobile {
+                width: 174px;
+                left: -62px;  
+            }
+        }
+
+        &-items {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 300;
+            width: 320px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                position: relative;                
+            }
+
+            &-item::after {
+                content: '';
+                width: 10px;
+                height: 5px;                
+                position: absolute;
+                top: 8px;
+                right: -10px;     
+                background-image: url(../img/downarrow.png);                 
+            }           
+
+        }
+        &-button {
+            width: 211px;
+            height: 47px;
+            color: $redcolor;
+            font-size: 16px;
+            background-color: $whitecolor;
+            @include flex-center-space-around; 
+            border-width:1px;
+            border-color: $redcolor; 
+            border-style: solid;
+            
+        }
+
+
+    }
+
+
+}
+
