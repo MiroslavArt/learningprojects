@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+@mixin flex-center-space-around() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin flex-center($direction:column) {
     display: flex;
     justify-content: center;

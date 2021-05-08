@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./cdn/bootstrap/bootstrap.css">    
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./cdn/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
@@ -62,42 +64,37 @@
         </div>
     </header>
     <main>
-        <section class="regheader">
-            <div class="regheader__title ncontainer">
-                <h1>registration:</h1>
+        <section class="productheader">
+            <div class="productheader__title ncontainer">
+                <h1 class="productheader__title-item">new arrivals</h1>
+                <h1 class="productheader__title-item productheader__title-item--right"><span class="productheader__title-item--gray">home/men/</span>new arrivals</h1>
+            </div>
+        </section>      
+        <section class="carousel-wrapper">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carous-center"><img src="./img/slider.png" width='597' height='724'></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carous-center"><img src="./img/slider.png" width='597' height='724'></div>
+                    </div>
+                </div> 
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <div><img src="./img/rightarrow.png" width="13" height="13"></div>
+                    <!--<i class="fas fa-arrow-left font-size-50 red"></i>-->
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <div><img src="./img/leftarrow.png" width="13" height="13"></div>
+                    <!--<i class="fas fa-arrow-right font-size-50 red"></i>-->
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
         </section>
-        <section class="reg ncontainer">
-            <ul class="reg__list">
-                <li class="reg__list-item reg__list-item--short">
-                    <form class="reg__form" action='' method="GET"></form>                        
-                        <label class="reg__form-label">Your name</label>
-                        <input class="reg__form-text-input" type="text" placeholder="First name" required>
-                        <input class="reg__form-text-input" type="text" placeholder="Last name" required>                                              
-                        <div class="reg__form-radio-wrapper">
-                            <p><input class="reg__form-radio-input" name="gender" type="radio">Male</p>
-                            <p><input class="reg__form-radio-input" name="gender" type="radio">Female</p>
-                        </div>                        
-                        <label class="reg__form-label">Login details</label>
-                        <input class="reg__form-text-input" type="text" placeholder="Email" required>
-                        <input class="reg__form-text-input" type="text" placeholder="Password" required>
-                        <label class="reg__form-label--notification">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</label>
-                        <button class="reg__form-button" type="submit" class="button">join now &rarr;</button>
-                    </form>
-                </li>
-                <li class="reg__list-item reg__list-item--long">      
-                    <ul class="reg__block">
-                        <li><h2 class="reg__block-header">loyalty has its perks</h2></li>   
-                        <li class="reg__block-description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</li> 
-                        <li class="reg__block-checklist">15% off welcome offer</li>
-                        <li class="reg__block-checklist">Free shipping, returns and exchanges on all orders</li>
-                        <li class="reg__block-checklist">$10 off a purchase on your birthday</li>
-                        <li class="reg__block-checklist">Early access to products</li>
-                        <li class="reg__block-checklist">Exclusive offers & rewards</li>                    
-                    </ul>                    
-                </li>
-            </ul>
-        </section>
+        
         <section class="callback ncontainer callback__background">
             <ul class="callback__list">
                 <li class="callback__list-item">
@@ -116,7 +113,7 @@
         </section>
     </main>
     <footer class="footer">        
-        <div class="footer__wrapper ncontainer">
+        <div class="footer__wrapper container">
             <div>
                 <p class="footer__wrapper-rights">© 2021  Brand  All Rights Reserved.</p>
             </div>
@@ -127,6 +124,7 @@
                 <div class="footer-socnets__wrapper"><a href="#"><img src="./img/twitter.png" alt="main" width="15" height="12"></a></div>
             </div>
         </div> 
-    </footer>    
+    </footer>  
+    <script src="./cdn/bootstrap/bootstrap.js"></script>
 </body>
 </html>

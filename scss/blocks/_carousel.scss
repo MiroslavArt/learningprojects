@@ -1,0 +1,13 @@
+.carous-center  {
+    @include flex-center(row); 
+}
+
+.fa-arrow {
+    width: 47px;
+    height: 47px;
+    background-color: $lightgraycolor;
+}
+
+.carousel-wrapper {
+    background-color: #F7F7F7;
+}

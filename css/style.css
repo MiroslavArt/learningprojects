@@ -6,19 +6,19 @@ body {
   font-style: normal;
 }
 
-.container {
+.ncontainer {
   width: 80%;
   margin: 0 auto;
 }
 
 @media (max-width: 1399px) {
-  .container {
+  .ncontainer {
     width: 96%;
   }
 }
 
 @media (max-width: 767px) {
-  .container {
+  .ncontainer {
     width: 91%;
   }
 }
@@ -793,6 +793,97 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.productheader {
+  background-color: #F1E4E6;
+  color: #F16D7F;
+  width: 100%;
+}
+
+.productheader__title {
+  min-height: 148px;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .productheader__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.productheader__title-item {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .productheader__title-item {
+    text-align: center;
+  }
+}
+
+.productheader__title-item--right {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .productheader__title-item--right {
+    text-align: center;
+  }
+}
+
+.productheader__title-item--gray {
+  font-weight: 300;
+  color: #9F9F9F;
+}
+
+.carous-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fa-arrow {
+  width: 47px;
+  height: 47px;
+  background-color: #F8F8F8;
+}
+
+.carousel-wrapper {
+  background-color: #F7F7F7;
 }
 
 .reg {
