@@ -42,6 +42,22 @@
     background-color: $lightgraycolor;
     margin-bottom: 30px;
     position: relative;
+
+    &--hide-tablet {
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    &--hide-mobile {
+        @include mobile {
+            display: none;
+        }
+    }
 }
 
 .products__item:hover .products__item-button {

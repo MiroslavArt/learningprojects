@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./cdn/bootstrap/bootstrap.css">    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">    
-    <link rel="stylesheet" href="./cdn/all.css">
+    <!--<link rel="stylesheet" href="./cdn/all.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
@@ -74,27 +74,57 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="carous-center"><img src="./img/slider.png" width='597' height='724'></div>
+                        <div class="carousel-center"><img src="./img/slider.png" width='597' height='724'></div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carous-center"><img src="./img/slider.png" width='597' height='724'></div>
+                        <div class="carousel-center"><img src="./img/slider.png" width='597' height='724'></div>
                     </div>
                 </div> 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
-                    <div><img src="./img/rightarrow.png" width="13" height="13"></div>
-                    <!--<i class="fas fa-arrow-left font-size-50 red"></i>-->
+                    <div class="carousel-button-wrapper"><img src="./img/rightarrow.png" width="13" height="13"></div>                    
                     <span class="visually-hidden">Предыдущий</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
-                    <div><img src="./img/leftarrow.png" width="13" height="13"></div>
-                    <!--<i class="fas fa-arrow-right font-size-50 red"></i>-->
+                    <div class="carousel-button-wrapper"><img src="./img/leftarrow.png" width="13" height="13"></div>                    
                     <span class="visually-hidden">Следующий</span>
                 </button>
             </div>
         </section>
-        
+
+        <section class="products ncontainer">
+            <div class="products__heading-wrapper">
+                <h2 class="products__heading">Featured Items</h2>
+                <p class="products__text">Shop for items based on what we featured in this week</p>
+            </div>        
+            <ul class="products__list">
+                <li class="products__item">
+                    <div class="products__item-img-wrapper"><img class="products__item-img" src="./img/featured4.jpg" alt="product-4" width="360" height="420"></div><!--<div class="products__item-img-wrapper--black"><img class="products__item-img" src="./img/featured4.jpg" alt="product-4" width="360" height="420"></div>-->
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <button type="button" class="products__item-button">Add to Cart</button>
+                </li>
+                <li class="products__item products__item--hide-mobile">
+                    <div class="products__item-img-wrapper"><img class="products__item-img" src="./img/featured3.jpg" alt="product-4" width="360" height="420"></div><!--<div class="products__item-img-wrapper--black"><img class="products__item-img" src="./img/featured5.jpg" alt="product-5" width="360" height="420"></div>-->
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <button type="button" class="products__item-button">Add to Cart</button>
+                </li>
+                <li class="products__item products__item--hide-tablet">
+                    <div class="products__item-img-wrapper"><img class="products__item-img" src="./img/featured6.jpg" alt="product-4" width="360" height="420"></div><!--<<div class="products__item-img-wrapper--black"><img class="products__item-img" src="./img/featured6.jpg" alt="product-6" width="360" height="420"></div>-->
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <button type="button" class="products__item-button">Add to Cart</button>
+                </li>         
+            </ul>
+        </section>        
         <section class="callback ncontainer callback__background">
             <ul class="callback__list">
                 <li class="callback__list-item">
