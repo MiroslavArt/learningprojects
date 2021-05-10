@@ -1,0 +1,40 @@
+.productheader {
+    background-color: $pinkcolor;
+    color: $redcolor;
+    width: 100%;
+
+    &__title {    
+        min-height: 148px;
+        font-size: 24px;     
+        text-transform: uppercase; 
+        @include flex-center-space-around; 
+
+        @include mobile {
+            @include flex-center(row);   
+            flex-wrap: wrap;          
+        }   
+
+        &-item { 
+            width: 100%;
+
+            @include mobile {
+                text-align: center;         
+            } 
+            
+            &--right {
+                text-align: right;
+                @include mobile {
+                    text-align: center;         
+                } 
+            }
+
+            &--gray {
+                font-weight: 300;
+                color: $graycolor;                
+            }
+
+        }
+
+    }
+    
+}

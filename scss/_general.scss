@@ -3,7 +3,7 @@ body {
     @include font();
 }
 
-.container {
+%container {
     width: 80%;
     margin: 0 auto;
 
@@ -16,6 +16,10 @@ body {
     }
 }
 
+.ncontainer {
+    @extend %container;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -26,3 +30,4 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
 }
+

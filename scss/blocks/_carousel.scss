@@ -1,0 +1,16 @@
+.carousel-center  {    
+    @include flex-center-start(); 
+    min-height: 789px;
+    z-index: 22;
+}
+
+.carousel-wrapper {
+    background-color: $lightgraycolor;
+}
+
+.carousel-button-wrapper {
+    @include flex-center(row);
+    background-color: $graycolor;
+    width: 27px;
+    height: 27px;
+}
