@@ -1,20 +1,19 @@
-.callback__background {
+.callback {
     background-size: cover;
-    background-image: url(../img/landscape.jpg); 
+    background-image: url(../img/layer.png);     
     width: 100%;
     opacity: 1;    
 }
 
 .callback__list {
-    @include flex-center(row);
-    flex-wrap: wrap;
-    width: 100%; 
+    @include flex-center-space-between;
+    flex-wrap: wrap;    
     min-height: 448px;
     
 }
 
 .callback__list-item {
-    width: 50%;
+    width: 33%;
     height: 100%; 
     @include flex-center;
           
@@ -35,7 +34,7 @@
     margin-bottom: 10px;
 }
 
-.callback__list-item-form-header--bottom {
+.callback__list-item-form-bottom {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 32px;
