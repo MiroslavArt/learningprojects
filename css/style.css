@@ -1612,7 +1612,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
 }
 
 @media (max-width: 1399px) {
@@ -1649,6 +1648,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   border: none;
+  cursor: pointer;
 }
 
 .footer {

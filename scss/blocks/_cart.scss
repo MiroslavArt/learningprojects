@@ -250,7 +250,7 @@
         justify-content: space-evenly;
         align-items: flex-end;
         flex-direction: column;
-        cursor: pointer;
+        
 
         @include tablet {            
             margin-top: 35px;
@@ -282,6 +282,7 @@
             background-color: $redcolor;
             align-self: center;
             border: none;
+            cursor: pointer;
         }
     }
 }
