@@ -61,7 +61,8 @@
 }
 
 .products__item:hover .products__item-button {
-    display: block;
+    //display: block;
+    @include flex-center-space-around;
 }
 
 .products__item-img-wrapper {
@@ -124,6 +125,13 @@
     left: 50%;
     display: none;   
     transform: translate(-50%, -50%);
+    background: transparent;
+    width: 138px;
+    height: 43px; 
+    color: $whitecolor; 
+    border-width:1px;
+    border-color: $whitecolor; 
+    border-style: $whitecolor; 
 }
 
 .products__allbutton-wrapper {
