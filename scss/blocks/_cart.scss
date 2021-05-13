@@ -159,6 +159,7 @@
         height: 25px;
         font-size: 18px;
         text-align: center;
+        cursor: pointer;
         @include mobile {
             width: 13px;
             height: 6px;            
@@ -237,6 +238,7 @@
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 57px;
+            cursor: pointer;
         }
     }
 
