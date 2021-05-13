@@ -26,7 +26,7 @@
         
         &-item--short {
             width: 40%;   
-            min-height: 998px; 
+            min-height: 998px;             
             @include tablet {
                 width: 100%;
                 min-height: 675px; 
@@ -133,7 +133,7 @@
     }
 
     &-del:hover {
-        color: $lightgraycolor;
+        color: $graycolor;
         transform: scale(1.5);
     }
 }
@@ -189,3 +189,96 @@
     }
 }
 
+.cart-apply {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+
+    @include mobile {        
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__header {
+        width: 358px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &-input {
+            width: 350px;
+            height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            width: 100px;
+            height: 34px;
+            font-size: 11px;
+            background-color: transparent;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 57px;
+        }
+    }
+
+    &__submit {
+        height: 214px;
+        width: 358px;
+        background-color: $lightgraycolor;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        flex-direction: column;
+
+        @include tablet {            
+            margin-top: 35px;
+        }
+
+        @include mobile {            
+            margin-top: 0px;
+        }
+
+        &-price {
+            margin-right: 34px;
+            text-transform: uppercase;
+
+            &--small {
+                font-size: 11px;
+            }
+
+            &--large {
+                font-size: 16px;
+            }
+
+
+        }
+
+        &-button {
+            width: 273px;
+            height: 50px;
+            color: $whitecolor;
+            background-color: $redcolor;
+            align-self: center;
+            border: none;
+        }
+    }
+}
